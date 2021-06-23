@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+// Variables
+@import "~bootstrap/dist/css/bootstrap.css";
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+$color-main: #f4f4f4;
+
+@font-face {
+  font-family: "Modern No. 20";
+  src: url(/assets/wargames/fonts/MOD20.TTF) format("opentype");
+}
+
+
+html {
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Modern No. 20";
+}
+
+// body {
+//   position: relative;
+//   z-index: -1;
+//   background-color: #f4f4f4;
+//   background: url(/assets/wargames/Main-BG-2.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   // display: flex;
+//   // flex: 1 1 auto;
+//   overflow-y: scroll;
+//   min-height: 1050px;
+//   min-width: 1860px;
+
+// }

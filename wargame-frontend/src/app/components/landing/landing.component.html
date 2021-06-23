@@ -1,0 +1,65 @@
+<div class="land-fluid row td-overlay__inner">
+  <section class="land-fluid">
+    <div class="row content">
+      <div class="col-3">
+        <app-left-side-bar></app-left-side-bar>
+      </div>
+      <div class="col-6 block--full">
+        <div class="landing">
+          <div class="content-block">
+            <div class="block-0">
+              <div class="coming_soon_context">
+                <div>
+                  <img src="/assets/wargames/Coming-Soon.png" class="soon_txt_img" />
+                </div>
+              </div>
+
+              <div class="coming_soon_clock">
+                <!-- <div>
+                  <img src="/assets/wargames/Counter.png" class="soon_clock_img" />
+                </div> -->
+
+                <div class="clock-text">
+                  <countdown class="flex-col-c" [config]="moreThan24Hours"></countdown>
+                  <!-- <span>10:20:22</span> -->
+                </div>
+              </div>
+
+              <div class="coming_soon_logo">
+                <div>
+                  <img src="/assets/wargames/logo.png" class="soon_logo" />
+                </div>
+              </div>
+            </div>
+
+            <div class="block-1">
+              <div class="coming_soon_txt">
+                <div>
+                  <span>
+                    It has been highly important for us to create meaningful
+                    relationships with our customers and partners over the
+                    years. Our business portfolio has been focused not only on
+                    integrating creative technology services and solutions, but
+                    rather on
+                  </span>
+                </div>
+              </div>
+
+              <div class="coming_soon_social">
+                <div class="social">
+                  <img src="/assets/wargames/social/Inst-icon.png" class="insta" />
+                  <img src="/assets/wargames/social/Face-icon.png" class="face" />
+                  <img src="/assets/wargames/social/Twitter-icon.png" class="twitter" />
+                  <img src="/assets/wargames/social/Youtube-icon.png" class="youtube" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <app-right-side-bar></app-right-side-bar>
+      </div>
+    </div>
+  </section>
+</div>

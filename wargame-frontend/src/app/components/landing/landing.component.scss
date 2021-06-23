@@ -1,0 +1,267 @@
+
+.land-fluid, .content {
+  height: inherit;
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modern No. 20";
+}
+
+.landing,
+.content-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.block-0 {
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    padding-top: 130px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    padding-top: 150px;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    padding-top: 165px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-top: 170px;
+  }
+}
+
+.coming_soon_context {
+  text-align: center;
+  .soon_txt_img {
+    @media (min-width: 0px) and (max-width: 1199px)  {
+      width: 65%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 73%;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1749px) {
+      width: 75%;
+    }
+
+    @media (min-width: 1750px) {
+      width: 100%;
+    }
+  }
+}
+
+.coming_soon_clock {
+  text-align: center;
+  .soon_clock_img{
+
+    @media (min-width: 0px) and (max-width: 1199px)  {
+      width: 65%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 75%;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1749px) {
+      width: 80%;
+    }
+
+    @media (min-width: 1800px) {
+      width: 100%;
+    }
+  }
+}
+
+.coming_soon_clock .clock-text {
+  background: url(/assets/wargames/Counter.png);
+  background-repeat: no-repeat;
+  background-size: 70% 100%;
+  background-position: center;
+  padding: 20px;
+  padding-bottom: 27px;
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    background-size: 55% 100%;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    background-size: 65% 100%;
+  }
+
+  @media (min-width: 1750px) {
+    background-size: 90% 100%;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.coming_soon_logo {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  .soon_logo {
+    @media (min-width: 0px) and (max-width: 1199px) {
+      width: 60%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 65%;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1749px) {
+      width: 80%;
+    }
+
+  }
+}
+
+.block-1 {
+  position: relative;
+  bottom: 48px;
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    bottom: 55px;
+  }
+
+  @media (min-width: 1750px) {
+    bottom: 50px;
+  }
+}
+
+.coming_soon_txt {
+  text-align: center;
+  background-image: url(/assets/wargames/BG-Tex-Intro.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  div {
+    font-family: "Modern No. 20";
+    font-weight: 600;
+    // top right bottom left
+    padding: 25px 30px 25px 30px;
+    // line-height: inherit;
+
+    // @media (min-width: 0) and (max-width: 1599px) {
+    //   padding-left: 40px;
+    //   padding-right: 40px;
+    //   padding-top: 25px;
+    //   padding-bottom: 25px;
+    // }
+
+    // @media (min-width: 1600px) and (max-width: 1749px) {
+    //   padding-left: 40px;
+    //   padding-right: 40px;
+    //   padding-top: 25px;
+    //   padding-bottom: 25px;
+    // }
+
+    // @media (min-width: 1750px) and (max-width: 1950px) {
+    //   padding: 35px;
+    //   font-size: 18px;
+    //   font-weight: 600;
+    //   padding-left: 50px;
+    //   padding-right: 50px;
+    //   font-family: "Roboto";
+    // }
+  }
+}
+
+.coming_soon_social {
+  text-align: center;
+
+  .social {
+    img {
+      cursor: pointer;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+
+    img:hover {
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      -webkit-animation:spin 2s linear infinite;
+      -moz-animation:spin 2s linear infinite;
+      animation:spin 2s linear infinite;
+    }
+  }
+}
+
+
+.flex-col-c {
+  color: black;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1750px) {
+    font-size: 20px;
+    letter-spacing: 7px;
+  }
+
+}
+
+::ng-deep countdown span .item0 {
+  position: relative;
+  // padding-left: 1px;
+  // padding-right: 1px;
+}
+
+
+// ::ng-deep countdown span .item1 {
+//   position: relative;
+//   @media (min-width: 1200px) and (max-width: 1599px) {
+//     left: 2px;
+//   }
+
+//   @media (min-width: 1750px) {
+//     left: 2px;
+//   }
+// }
+
+
+// ::ng-deep countdown span .item2 {
+//   position: relative;
+//   left: 3px;
+//   @media (min-width: 1600px) and (max-width: 1749px) {
+//     left: 5px;
+//   }
+
+//   @media (min-width: 1750px) {
+//     left: 5px;
+//   }
+
+// }
+
+// ::ng-deep countdown span .item3 {
+//   position: relative;
+//   left: 3px;
+
+//   @media (min-width: 1600px) and (max-width: 1749px) {
+//     left: 4px;
+//   }
+
+//   @media (min-width: 1750px) {
+//     left: 5px;
+//   }
+// }

@@ -1,0 +1,210 @@
+.right-side {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.right-wrapper {
+  overflow-x: hidden;
+  display: flex;
+  overflow-y: hidden;
+
+  position: absolute;
+  /* right: 0; */
+  top: -110px;
+  right: 60px;
+  text-align: center;
+}
+
+.rules {
+  position: absolute;
+  cursor: pointer;
+  left: 5px;
+
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    top: 135px;
+    left: 10px;
+  }
+
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    top: 140px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    top: 160px;
+  }
+
+  @media only screen and (min-width: 1750px) {
+    top: 188px;
+  }
+
+  img {
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      width: 70%;
+    }
+
+    @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      width: 90%;
+    }
+  }
+
+  img:hover {
+    content: url('/assets/wargames/Rules-H.png');
+  }
+}
+
+.challenges {
+  position: absolute;
+  cursor: pointer;
+  left: 5px;
+
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    top: 255px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    top: 270px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    top: 310px;
+    left: 5px;
+  }
+
+  @media only screen and (min-width: 1750px) {
+    top: 350px;
+    left: 5px;
+  }
+
+  img {
+
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      width: 70%;
+    }
+
+    @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      width: 90%;
+    }
+    
+  }
+
+  img:hover {
+    content: url('/assets/wargames/Challenges-H.png');
+  }
+}
+
+.board {
+  position: absolute;
+  cursor: pointer;
+  left: 5px;
+
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    top: 370px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    top: 390px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    top: 450px;
+    left: 5px;
+  }
+
+  @media only screen and (min-width: 1750px) {
+    top: 500px;
+    left: 5px;
+  }
+
+  img {
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      width: 70%;
+    }
+
+    @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      width: 90%;
+    }
+  }
+
+  img:hover {
+    content: url('/assets/wargames/Score-Board-H.png');
+  }
+}
+
+// .sidebar-wrapper {
+//   -webkit-transition: margin 0.25s ease-out;
+//   -moz-transition: margin 0.25s ease-out;
+//   -o-transition: margin 0.25s ease-out;
+//   transition: margin 0.25s ease-out;
+//   position: absolute;
+//   top: -90px;
+//   right: 0;
+// }
+
+
+.r-side_pic {
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    width: 65%;
+  }
+
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    width: 70%;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    width: 80%;
+  }
+
+
+  @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+    width: 90%;
+    // padding-right: 30%;
+  }
+
+  @media only screen and (min-width: 1921px) {
+    // padding-right: 30%;
+    width: 100%;
+  }
+}
+
+.sound {
+  position: inherit;
+
+  .sound-bg {
+    text-align: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+
+    img {
+      position: relative;
+      width: 85%;
+      content: url('/assets/wargames/Sound-On.png');
+      // top: 4px;
+    }
+
+    img:hover {
+      content: url('/assets/wargames/Sound-Off.png');
+    }
+  }
+}

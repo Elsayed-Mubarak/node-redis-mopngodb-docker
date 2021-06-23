@@ -1,0 +1,35 @@
+<div class="land-fluid row td-overlay__inner">
+    <section class="land-fluid">
+        <div class="row content">
+            <div class="col-3">
+                <app-left-side-bar></app-left-side-bar>
+            </div>
+            <div class="col-6 block--full">
+                <div class="score--board">
+                    <div class="content-block">
+                        <div class="block-0">
+                            <div class="score-board_content">
+                                <div class="score-title">
+                                    <span>SCORE-BOARD</span>
+                                </div>
+                            </div>
+
+                            <div *ngFor="let item of arr, let i = index" class="team">
+                                <app-rank-content [rankNo]="i + 1" [pageIndex]="currentPage" [pageSize]="pageSize"></app-rank-content>
+                            </div>
+
+                            <div class="paginate">
+                                <mat-paginator showFirstLastButtons [hidePageSize]="false" [pageSize]="pageSize"
+                                    [pageIndex]="currentPage" [length]="length"></mat-paginator>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <app-right-side-bar></app-right-side-bar>
+            </div>
+        </div>
+    </section>
+</div>

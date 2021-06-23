@@ -1,0 +1,24 @@
+{
+	"dbURI": "",
+  "host": "http://localhost:5000",
+	"ticketValidationInDays": 1,
+	"banDurationInHours": 9,
+	"freeRetriesOnStrictRoutes": 5,
+	"timeBetweenPasswordResetsInHours": 1,
+	"maxLogins": 6,
+	"maxTicketUsagePerHour": 6000,
+	"foreignIpBlockInDays": 365,
+	"scanBlockInDays": 15,
+	"tempTokenDurationInHours": 1,
+	"timeZone": "Africa/Cairo",
+	"mailingServer": {
+		"host": "",
+		"port": "",
+		"secure": "",
+		"auth": {
+			"user": "",
+			"pass": ""
+		}
+	},
+	"emailVerificationUrl": "/verify/email"
+}
